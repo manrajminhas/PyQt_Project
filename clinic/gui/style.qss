@@ -1,0 +1,33 @@
+QWidget {
+    background-color: #000000; /* Set background to black */
+    color: #ffffff; /* Set text color to white */
+    font-weight: bold; /* Make text bold */
+    border: none;
+}
+
+QPushButton {
+    background-color: #fb0000; /* Slightly lighter black for buttons */
+    border: 1px solid #333333;
+    border-radius: 4px;
+    color: #ffffff; /* Set text color to white */
+    font-weight: bold; /* Make text bold */
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background-color: #eeb866; /* Slightly lighter hover effect */
+    border: 1px solid #444444;
+}
+
+QCheckBox {
+    color: #ffffff; /* Set text color to white */
+    font-weight: bold; /* Make text bold */
+}
+
+QLineEdit {
+    background-color: #333333; /* Set input field background */
+    border: 1px solid #333333;
+    color: #ffffff; /* Set text color to white */
+    font-weight: bold; /* Make text bold */
+    padding: 5px;
+}
