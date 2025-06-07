@@ -1,9 +1,10 @@
-Medical Clinic System GUI
+# Medical Clinic System GUI
 
 This personal project demonstrates a Model-View-Controller (MVC) approach by adding a PyQt6 graphical interface to an existing clinic management back end.
 
-Project Structure
+## Project Structure
 
+```
 a5/
 ├── clinic/
 │   ├── controller.py           # Core controller logic
@@ -21,59 +22,61 @@ a5/
 │   ├── clinic_gui.py           # Main window (ClinicGUI)
 │   └── ...                     # Additional windows, widgets, layouts
 └── tests/                      # Unit tests (optional)
+```
 
-Requirements
+## Requirements
 
-Python 3.9 (features compatible with 3.9+)
+* **Python 3.9** (features compatible with 3.9+)
+* **PyQt6** framework:
 
-PyQt6 framework:
+  ```sh
+  pip install PyQt6
+  ```
 
-pip install PyQt6
+## Installation & Setup
 
-Installation & Setup
+1. Clone the repo and navigate into the `a5` directory.
+2. Ensure all backend files and DAOs are present under `clinic/` and `clinic/dao/`.
+3. Install PyQt6 if not already:
 
-Clone the repo and navigate into the a5 directory.
+   ```sh
+   pip install PyQt6
+   ```
 
-Ensure all backend files and DAOs are present under clinic/ and clinic/dao/.
+## Usage
 
-Install PyQt6 if not already:
-
-pip install PyQt6
-
-Usage
-
-Command-Line Prototype
+### Command-Line Prototype
 
 Run the prototype CLI to explore controller interactions:
 
+```sh
 python3 -m clinic cli
+```
 
 Follow prompts to log in, manage patients, appointments, and notes.
 
-Graphical Interface
+### Graphical Interface
 
 Launch the PyQt6 GUI:
 
+```sh
 python3 -m clinic gui
+```
 
-Login/Logout
+* **Login/Logout**
+* **Search & CRUD patients** (displayed in a QTableView)
+* **View & edit notes** (displayed in a QPlainTextEdit)
 
-Search & CRUD patients (displayed in a QTableView)
+## MVC Highlights
 
-View & edit notes (displayed in a QPlainTextEdit)
+* **Model:** `patient.py`, `patient_record.py`, `note.py` encapsulate data.
+* **View:** `clinic/gui` contains UI classes decoupled from business logic.
+* **Controller:** `controller.py` mediates between view and model.
 
-MVC Highlights
+## Contributing & Workflow
 
-Model: patient.py, patient_record.py, note.py encapsulate data.
+* Develop features on a separate branch, merge when stable.
+* Commit frequently with descriptive messages.
+* Manual testing through the GUI to verify data persistence and UI behavior.
 
-View: clinic/gui contains UI classes decoupled from business logic.
-
-Controller: controller.py mediates between view and model.
-
-Contributing & Workflow
-
-Develop features on a separate branch, merge when stable.
-
-Commit frequently with descriptive messages.
-
-Manual testing through the GUI to verify data persistence and UI behavior.
+*Enjoy exploring the clinic management GUI and the MVC design in action!*
